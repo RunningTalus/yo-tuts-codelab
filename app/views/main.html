@@ -14,8 +14,12 @@
   </form>
 
   <!-- Todos List-->
-  <p class="form-group" ng-repeat="todo in todos">
+ <!--removeTodo($index) The value of $index will be the array index of the current todo item within the ng-repeat directive.-->
+  <p class="input-group" ng-repeat="todo in todos">
     <input type="text" ng-model="todo" class="form-control">
+    <span class="input-grp-btn">
+      <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+    </span>
   </p>
 
 </div>
