@@ -3,4 +3,5 @@ dist
 .tmp
 .sass-cache
 bower_components
-.idea
+.idea/workspace.xml
+
